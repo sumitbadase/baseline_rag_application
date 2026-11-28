@@ -1,0 +1,102 @@
+[
+  {
+    "test_case_id": "success-001",
+    "category": "successful",
+    "question": "How many annual leave days do employees receive?",
+    "actual_answer": "Full-time employees receive 20 days of annual leave [employee_handbook.txt].",
+    "expected_source_retrieved": true,
+    "answer_contains_expected_text": true,
+    "citations_present": true,
+    "correct_source_cited": true,
+    "abstention_expected": false,
+    "abstention_observed": false,
+    "retrieved_chunk_ids": [
+      "employee_handbook-0-000",
+      "work_policy-0-000",
+      "project_register-0-000"
+    ],
+    "latency_ms": 1.0441250633448362,
+    "passed": true,
+    "failure_reason": null
+  },
+  {
+    "test_case_id": "vocab-001",
+    "category": "vocabulary_mismatch",
+    "question": "How many remote-work days are permitted?",
+    "actual_answer": "Employees may work remotely twice per week [work_policy.txt].",
+    "expected_source_retrieved": true,
+    "answer_contains_expected_text": true,
+    "citations_present": true,
+    "correct_source_cited": true,
+    "abstention_expected": false,
+    "abstention_observed": false,
+    "retrieved_chunk_ids": [
+      "employee_handbook-0-000",
+      "work_policy-0-000",
+      "project_register-0-000"
+    ],
+    "latency_ms": 0.3631250001490116,
+    "passed": true,
+    "failure_reason": null
+  },
+  {
+    "test_case_id": "identifier-001",
+    "category": "exact_identifier",
+    "question": "Which team owns INC-2025-00417?",
+    "actual_answer": "INC-2025-00417 is owned by the Identity Operations team [incident_register.txt].",
+    "expected_source_retrieved": true,
+    "answer_contains_expected_text": true,
+    "citations_present": true,
+    "correct_source_cited": true,
+    "abstention_expected": false,
+    "abstention_observed": false,
+    "retrieved_chunk_ids": [
+      "incident_register-0-000",
+      "work_policy-0-000",
+      "employee_handbook-0-000"
+    ],
+    "latency_ms": 0.3832080401480198,
+    "passed": true,
+    "failure_reason": null
+  },
+  {
+    "test_case_id": "multihop-001",
+    "category": "multi_hop",
+    "question": "Who leads the division responsible for Project Atlas?",
+    "actual_answer": "Priya Sharma leads the division responsible for Project Atlas [project_register.txt; organization_directory.txt].",
+    "expected_source_retrieved": true,
+    "answer_contains_expected_text": true,
+    "citations_present": true,
+    "correct_source_cited": true,
+    "abstention_expected": false,
+    "abstention_observed": false,
+    "retrieved_chunk_ids": [
+      "project_register-0-000",
+      "organization_directory-0-000",
+      "incident_register-0-000"
+    ],
+    "latency_ms": 0.4972920287400484,
+    "passed": true,
+    "failure_reason": null
+  },
+  {
+    "test_case_id": "unsupported-001",
+    "category": "unsupported_answer",
+    "question": "How many days may employees work from another country?",
+    "actual_answer": "I could not find this information in the provided documents.",
+    "expected_source_retrieved": null,
+    "answer_contains_expected_text": null,
+    "citations_present": false,
+    "correct_source_cited": null,
+    "abstention_expected": true,
+    "abstention_observed": true,
+    "retrieved_chunk_ids": [
+      "work_policy-0-000",
+      "employee_handbook-0-000",
+      "project_register-0-000"
+    ],
+    "latency_ms": 0.3885000478476286,
+    "passed": true,
+    "failure_reason": null
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "timestamp_utc": "2026-07-27T21:29:45.535849+00:00",
+  "provider": "ollama",
+  "generation_model": "llama3.2:3b",
+  "embedding_backend": "hash",
+  "embedding_model": "deterministic-hash",
+  "top_k": 3,
+  "chunk_size": 500,
+  "chunk_overlap": 80,
+  "document_count": 5,
+  "chunk_count": 5,
+  "cases_path": "/Users/arjunvaid/Desktop/sucess_plan/advanced_rag_engineering/baseline_RAG_ application/tests/fixtures/benchmark_cases.json",
+  "output_dir": "/Users/arjunvaid/Desktop/sucess_plan/advanced_rag_engineering/baseline_RAG_ application/artifacts/ollama"
+}

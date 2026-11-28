@@ -1,0 +1,102 @@
+[
+  {
+    "test_case_id": "success-001",
+    "category": "successful",
+    "question": "How many annual leave days do employees receive?",
+    "actual_answer": "Full-time employees receive 20 days of paid annual leave per calendar year [employee_handbook.txt].",
+    "expected_source_retrieved": true,
+    "answer_contains_expected_text": true,
+    "citations_present": true,
+    "correct_source_cited": true,
+    "abstention_expected": false,
+    "abstention_observed": false,
+    "retrieved_chunk_ids": [
+      "employee_handbook-0-000",
+      "work_policy-0-000",
+      "project_register-0-000"
+    ],
+    "latency_ms": 1418.4967910405248,
+    "passed": true,
+    "failure_reason": null
+  },
+  {
+    "test_case_id": "vocab-001",
+    "category": "vocabulary_mismatch",
+    "question": "How many remote-work days are permitted?",
+    "actual_answer": "I could not find this information in the provided documents.",
+    "expected_source_retrieved": true,
+    "answer_contains_expected_text": false,
+    "citations_present": false,
+    "correct_source_cited": false,
+    "abstention_expected": false,
+    "abstention_observed": true,
+    "retrieved_chunk_ids": [
+      "employee_handbook-0-000",
+      "work_policy-0-000",
+      "project_register-0-000"
+    ],
+    "latency_ms": 1033.7578339967877,
+    "passed": false,
+    "failure_reason": "expected fact was missing from the answer; expected source was not cited; model abstained despite an expected answer"
+  },
+  {
+    "test_case_id": "identifier-001",
+    "category": "exact_identifier",
+    "question": "Which team owns INC-2025-00417?",
+    "actual_answer": "The Identity Operations team owns INC-2025-00417 [incident_register.txt].",
+    "expected_source_retrieved": true,
+    "answer_contains_expected_text": true,
+    "citations_present": true,
+    "correct_source_cited": true,
+    "abstention_expected": false,
+    "abstention_observed": false,
+    "retrieved_chunk_ids": [
+      "incident_register-0-000",
+      "work_policy-0-000",
+      "employee_handbook-0-000"
+    ],
+    "latency_ms": 1348.3544170157984,
+    "passed": true,
+    "failure_reason": null
+  },
+  {
+    "test_case_id": "multihop-001",
+    "category": "multi_hop",
+    "question": "Who leads the division responsible for Project Atlas?",
+    "actual_answer": "Priya Sharma leads the Data Platforms division, which is responsible for Project Atlas.[organization_directory.txt]",
+    "expected_source_retrieved": true,
+    "answer_contains_expected_text": true,
+    "citations_present": true,
+    "correct_source_cited": false,
+    "abstention_expected": false,
+    "abstention_observed": false,
+    "retrieved_chunk_ids": [
+      "project_register-0-000",
+      "organization_directory-0-000",
+      "incident_register-0-000"
+    ],
+    "latency_ms": 1351.7722500255331,
+    "passed": false,
+    "failure_reason": "expected source was not cited"
+  },
+  {
+    "test_case_id": "unsupported-001",
+    "category": "unsupported_answer",
+    "question": "How many days may employees work from another country?",
+    "actual_answer": "I could not find this information in the provided documents.",
+    "expected_source_retrieved": null,
+    "answer_contains_expected_text": null,
+    "citations_present": false,
+    "correct_source_cited": null,
+    "abstention_expected": true,
+    "abstention_observed": true,
+    "retrieved_chunk_ids": [
+      "work_policy-0-000",
+      "employee_handbook-0-000",
+      "project_register-0-000"
+    ],
+    "latency_ms": 1118.8486670143902,
+    "passed": true,
+    "failure_reason": null
+  }
+]

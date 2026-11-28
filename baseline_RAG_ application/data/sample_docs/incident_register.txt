@@ -1,0 +1,4 @@
+Incident Register
+
+Incident INC-2025-00417 was assigned to the Identity Operations team.
+ Incident INC-2025-00418 was assigned to the Network Reliability team.

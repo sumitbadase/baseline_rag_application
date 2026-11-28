@@ -1,0 +1,12 @@
+fastapi>=0.115
+uvicorn>=0.34
+streamlit>=1.42
+pydantic>=2.10
+pydantic-settings>=2.7
+qdrant-client>=1.13
+pypdf>=5.2
+httpx>=0.28
+pandas>=2.2
+pytest>=8.3
+# Optional live embedding backend; install separately when using Python 3.12/3.13:
+# sentence-transformers>=3.4

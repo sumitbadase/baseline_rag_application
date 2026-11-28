@@ -1,0 +1,7 @@
+[
+  {"id":"success-001","category":"successful","question":"How many annual leave days do employees receive?","expected_answer_contains":["20 days"],"expected_source":"employee_handbook.txt"},
+  {"id":"vocab-001","category":"vocabulary_mismatch","question":"How many remote-work days are permitted?","expected_answer_contains":["twice per week"],"expected_source":"work_policy.txt"},
+  {"id":"identifier-001","category":"exact_identifier","question":"Which team owns INC-2025-00417?","expected_answer_contains":["Identity Operations"],"expected_source":"incident_register.txt"},
+  {"id":"multihop-001","category":"multi_hop","question":"Who leads the division responsible for Project Atlas?","expected_answer_contains":["Priya Sharma"],"expected_sources":["project_register.txt","organization_directory.txt"]},
+  {"id":"unsupported-001","category":"unsupported_answer","question":"How many days may employees work from another country?","must_abstain":true}
+]

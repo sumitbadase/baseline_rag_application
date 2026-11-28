@@ -1,0 +1,4 @@
+Project Register
+
+Project Atlas is managed by the Data Platforms division.
+ Project Beacon is managed by the Customer Analytics division.
