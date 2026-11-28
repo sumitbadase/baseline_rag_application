@@ -14,7 +14,7 @@ This lab builds the first working version of an Enterprise Knowledge Intelligenc
 ## Setup
 
 ```bash
-cd "/Users/arjunvaid/Desktop/sucess_plan/advanced_rag_engineering/baseline_RAG_ application"
+cd "/Users/sumitbadase/Desktop/sucess_plan/advanced_rag_engineering/baseline_RAG_ application"
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
